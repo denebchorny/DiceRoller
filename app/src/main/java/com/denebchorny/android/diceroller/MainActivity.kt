@@ -1,10 +1,10 @@
 package com.denebchorny.android.diceroller
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatTextView
+import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,5 +21,8 @@ class MainActivity : AppCompatActivity() {
         btnRoll.setOnClickListener { onRollDice() }
     }
 
-    private fun onRollDice() = Toast.makeText(this, "button clicked", Toast.LENGTH_SHORT).show()
+    private fun onRollDice() {
+        val randomNumber = Random.nextInt(6) + 1
+        tvResult.text = randomNumber.toString()
+    }
 }
