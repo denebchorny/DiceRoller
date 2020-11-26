@@ -3,17 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity"
     android:layout_gravity="center_vertical"
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvResult"
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivDice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="1"
         android:layout_gravity="center_horizontal"
-        android:textSize="30sp"/>
+        app:srcCompat="@drawable/levellist_dice"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnRoll"
