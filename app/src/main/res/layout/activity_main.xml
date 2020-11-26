@@ -3,21 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    tools:context=".MainActivity"
     android:layout_gravity="center_vertical"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        tools:text="1"
         android:layout_gravity="center_horizontal"
-        tools:text="1" />
+        android:textSize="30sp"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRoll"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="@string/mainactivity_roll" />
-
+        android:layout_height="wrap_content"
+        android:text="@string/mainactivity_roll"/>
 </LinearLayout>
